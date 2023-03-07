@@ -1,0 +1,11 @@
+funciones, scope, in and out
+3 ways to write them
+arguments, too few, too many
+growing functions
+
+data structures
+array, example, properties
+object, example, properties
+string, example, properties
+the Math object
+the == operatior

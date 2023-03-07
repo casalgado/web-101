@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arguments</title>
+  </head>
+  <body>
+    <h2>Clase</h2>
+    <label for="arg1">Input</label>
+    <input type="text" id="arg1" />
+    <button id="btn">Send</button>
+
+    <script>
+      let btn = document.getElementById("btn");
+
+      btn.addEventListener("click", (e) => {
+        let result = document.getElementById("arg1").value;
+        let output = "";
+        if (result.length < 5) {
+          output = "Too Short";
+        } else {
+          output = "Too Long";
+        }
+        console.log(output);
+      });
+    </script>
+  </body>
+</html>
