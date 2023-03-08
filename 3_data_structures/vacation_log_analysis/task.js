@@ -129,8 +129,6 @@ function averageExpensesWeekend(log) {
   return total / count;
 }
 
-console.log(averageExpensesWeekend(log));
-
 function averageExpenseByActivity(log, activity, isWeekend) {}
 
 function totalByActivity(log, activity) {
@@ -218,4 +216,20 @@ function returnMinValues(totals, min) {
   } ${activites} with a value of ${min}`;
 }
 
-console.log(returnMinValues(totals, min));
+function createList(log) {
+  let list = {};
+
+  for (let i = 0; i < log.length; i++) {
+    const entry = log[i];
+    if (list[entry.activity] == undefined) {
+      list[entry.activity] = 0;
+    }
+    if (entry.weekend) {
+      list[entry.activity] += entry.price;
+    }
+  }
+
+  return list;
+}
+
+console.log(createList(log));

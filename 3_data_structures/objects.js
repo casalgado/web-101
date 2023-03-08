@@ -632,3 +632,13 @@ let orders = [
     unitPrice: "15000",
   },
 ];
+
+function createList(orders) {
+  /* this function should return an object where each key is a product,
+     and the value is the total amount sold for that product.
+  list = {
+    'original grande': 1000,
+    'helado de maracuya': 1200
+  }
+  */
+}
