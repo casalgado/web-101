@@ -6,7 +6,7 @@ iterating through objects
 */
 
 let example_order = {
-  client: "mary castro",
+  client: "sebastian cotes",
   date: "2020-09-10T00:00:00-05:00",
   dateCreated: "2020-09-09T11:00:52-05:00",
   deliver: "2020-09-11T00:00:00-05:00",
@@ -73,7 +73,6 @@ let orders = [
     total: 20000,
     unitPrice: 20000,
   },
-
   {
     name: "helado de maracuya",
     quantity: 1,
