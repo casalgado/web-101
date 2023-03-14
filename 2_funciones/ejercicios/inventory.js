@@ -12,4 +12,4 @@ function formatInventory(cows, chicken, dogs) {
   console.log(`${zeroPad(dogs, 3)} dogs`);
 }
 
-console.log("Juliana"[2]);
+formatInventory(23, 132, 4);

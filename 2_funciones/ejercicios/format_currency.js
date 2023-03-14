@@ -19,7 +19,3 @@ function formatCurrency(num) {
 }
 
 console.log(formatCurrency(123456));
-
-for (let index = 0; index < array.length; index++) {
-  const element = array[index];
-}

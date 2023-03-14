@@ -635,10 +635,12 @@ let orders = [
 
 function createList(orders) {
   /* this function should return an object where each key is a product,
-     and the value is the total amount sold for that product.
+     and the value is the amount of units sold.
+
+     for this to work, strings must be converted to numbers
   list = {
-    'original grande': 1000,
-    'helado de maracuya': 1200
+    'original grande': 23,
+    'helado de maracuya': 2
   }
   */
 }
