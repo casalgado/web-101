@@ -1722,19 +1722,29 @@ let user_data = [
   },
 ];
 
-console.log(user_data.length);
+console.log("length", user_data.length);
 
 function filterByBalance(user) {
-  return user.balance > 5000;
+  return user.balance > 7000;
 }
-
-// console.log(user_data.filter(filterByBalance).length);
 
 function userSnippet(user) {
   return {
-    name: `${user.lastName}, ${user.firstName}`,
     email: user.email,
+    account: user.account,
   };
 }
 
-// console.log(user_data.map(userSnippet));
+function accountNumbers(user) {
+  return user.account;
+}
+
+function countries(user) {
+  return user.country;
+}
+
+function filterByGender(user) {
+  return user.sex == "female";
+}
+
+console.log(user_data.map(countries).sort());
