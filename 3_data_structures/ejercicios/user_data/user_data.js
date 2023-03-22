@@ -1728,7 +1728,7 @@ function filterByBalance(user) {
   return user.balance > 5000;
 }
 
-console.log(user_data.filter(filterByBalance).length);
+// console.log(user_data.filter(filterByBalance).length);
 
 function userSnippet(user) {
   return {
@@ -1737,4 +1737,4 @@ function userSnippet(user) {
   };
 }
 
-console.log(user_data.map(userSnippet));
+// console.log(user_data.map(userSnippet));
