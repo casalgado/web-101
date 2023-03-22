@@ -29,7 +29,7 @@
 //   users.push(user);
 // }
 
-let user_database = [
+let user_data = [
   {
     _id: "370bdadb-2327-4747-9ed1-e996873cbcaf",
     avatar:
@@ -1722,4 +1722,19 @@ let user_database = [
   },
 ];
 
-console.log(user_database.length);
+console.log(user_data.length);
+
+function filterByBalance(user) {
+  return user.balance > 5000;
+}
+
+console.log(user_data.filter(filterByBalance).length);
+
+function userSnippet(user) {
+  return {
+    name: `${user.lastName}, ${user.firstName}`,
+    email: user.email,
+  };
+}
+
+console.log(user_data.map(userSnippet));
