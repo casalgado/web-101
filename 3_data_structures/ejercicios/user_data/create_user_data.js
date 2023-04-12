@@ -38,4 +38,6 @@ console.log(cities[random_number_between_0_and_5]);
 }
 
 
+luego que tengan el array se pueden crear filtros o maps de acuerdo a los insights de data que se requieran
+
 */
